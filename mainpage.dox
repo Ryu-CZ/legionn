@@ -1,0 +1,30 @@
+/** @mainpage Legionn
+
+@section intro_sec Introduction
+<p>This is documentation of Legionn server.
+Server is implemented in [python](https://www.python.org/) [Flask framework](http://flask.pocoo.org/) and it runs under [Gunicorn](http://gunicorn.org/).</p>
+<div align="left">
+<table style="width:800px">
+ <tr>
+  <td><a href="https://www.python.org/">\htmlonly<img src="https://www.python.org/static/img/python-logo.png" alt="Python logo" height="82">\endhtmlonly</a></td>
+  <td> 
+   <div style="padding-right: 56px;"> 
+    <a href="http://gunicorn.org/">\htmlonly<img src="http://gunicorn.org/images/logo.png" alt="Gunicorn logo" height="75">\endhtmlonly</a>
+   </div> 
+  </td>
+  <td><a href="http://flask.pocoo.org">\htmlonly<img src="http://flask.pocoo.org/docs/0.10/_images/logo-full.png" alt="Flask logo" height="82">\endhtmlonly</a></td>
+ </tr>
+</table>
+</div>
+<br>
+
+@section install_sec Installation
+You can choose between <B>manual installation</B> or distribution in form of <B>docker container</B>.
+
+
+@subsection manual_isntallation Manual installation 
+Manual installation Dependencies:
+
+	pip install -r requirements.txt
+
+*/
