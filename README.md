@@ -1,16 +1,14 @@
-# Legion
+# Legionn
 
 * maintainer: [Ryu-CZ](https://github.com/Ryu-CZ)
-* wikipage: [Legionn](https://tech.kajot.cz/dew/index.php/Server/Legionn)
-* api: [Interface description](https://tech.kajot.cz/dew/index.php/Server/Legionn#Api)
 
 ## Description
 
 Legionn is platform hosting other subroutines in form of modules. It consists of Cores and Units.
 * **Core** represent one SI implementation and holds data shared by all its Units
 * **Unit** is worker produced by Core. Unit handles incoming communicator messages and http requests
-Curretly there gonna be one implementation of Core for jabber client with cleverbot intelligence.
-Suggested port of server is 5009.
+Curretly I oplan to implement Core for jabber client with cleverbot intelligence.
+Suggested port of Legionn server is 5009.
 
 ## Goals
 There are important abilities of Leggion which raises from its design:
