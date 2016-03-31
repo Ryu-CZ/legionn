@@ -10,6 +10,7 @@ Legionn is platform hosting other subroutines in form of modules. It consists of
 * **Core** represent one SI implementation and holds data shared by all its Units
 * **Unit** is worker produced by Core. Unit handles incoming communicator messages and http requests
 Curretly there gonna be one implementation of Core for jabber client with cleverbot intelligence.
+Suggested port of server is 5009.
 
 ## Goals
 There are important abilities of Leggion which raises from its design:
@@ -22,3 +23,6 @@ Manual installation Dependencies:
 ```bash
 pip install -r requirements.txt
 ```
+
+###Swagger api interface
+You can test http requests in swagger interaface on path `host:port/`
