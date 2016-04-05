@@ -7,14 +7,14 @@
 from flask import Flask
 from flask_restplus import Resource, Api, fields
 from werkzeug.contrib.fixers import ProxyFix
-import cores
+import interfaces
   
 app_name = 'Legionn'
 app_version = 'v16.01.00'
 __version__ = app_version
 
   
-class Legionn(Api, cores.Core):
+class Legionn(Api, interfaces.Core):
     '''!
     @brief Represents main Core of platform.
     Legionn platform is just another Core. Legionn adds new functionality as all Cores should do:
@@ -29,13 +29,13 @@ class Legionn(Api, cores.Core):
                      title='Legionn API', 
                      description=description,
                      contact='Tom Trval', 
-                     contact_email='trval@kajot.cz',
+                     contact_email='thandeus@gmail.com',
                      tags=['unit','core','module', 'platform', 'python', 'flask'])
         self._api_namespace = self.namespace(url_prefix, description=description)
         #init Core
-        cores.Core.__init__(self, 
-                            name=name, 
-                            description=description)
+        interfaces.Core.__init__(self, 
+                                 name=name, 
+                                 description=description)
         self.init_resources()
       
     @property
@@ -53,7 +53,7 @@ class Legionn(Api, cores.Core):
         @param name: name of record in cores dict
         '''
         #check for core duplicity
-        if not isinstance(obj, cores.Core):
+        if not isinstance(obj, interfaces.Core):
             raise TypeError('core is not Core type')
         name = name or obj._name
         if name in self.cores:
@@ -61,7 +61,7 @@ class Legionn(Api, cores.Core):
         self.cores[name] = obj
           
     def remove(self, name):
-        return cores.Core.remove(self, name)
+        return interfaces.Core.remove(self, name)
       
     def activate(self, context=None):
         for i in range(len(self.cores)):

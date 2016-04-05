@@ -4,8 +4,8 @@
 @author [Ryu-CZ](https://github.com/Ryu-CZ)
 '''
 
-jabber = {'id':'gs2_bot@jabber.kajot.cz',
-          'password':'Ubi9gaht',
-          'observers':('gs2@conference.jabber.kajot.cz')}
+jabber = {'id':'gs2_bot@jabber.cz',
+          'password':'secret',
+          'observers':('gs2@conference.jabber')}
 
 
